@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tameem Khasawneh | Photography</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f1f1f1;
+      color: #111;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ---------- Animations ---------- */
+    .fade {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.9s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(#f1f1f1, #ffffff);
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 600px;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 0.9rem 2.6rem;
+      border-radius: 999px;
+      background: #111;
+      color: white;
+      font-weight: bold;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+
+    /* ---------- Sections ---------- */
+    .section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 5rem 2rem;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+    }
+
+    /* ---------- Gallery ---------- */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.6rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 22px;
+      cursor: pointer;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 22px 45px rgba(0,0,0,0.2);
+    }
+
+    /* ---------- Lightbox ---------- */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(240,240,240,0.85);
+      backdrop-filter: blur(14px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+      z-index: 999;
+    }
+
+    .lightbox.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox img {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 24px;
+      transform: scale(0.95);
+      transition: transform 0.4s ease;
+    }
+
+    .lightbox.active img {
+      transform: scale(1);
+    }
+
+    .close, .nav {
+      position: absolute;
+      font-size: 2.6rem;
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.2s ease;
+    }
+
+    .close:hover, .nav:hover {
+      transform: scale(1.2);
+    }
+
+    .close { top: 20px; right: 30px; }
+    .nav.left { left: 30px; }
+    .nav.right { right: 30px; }
+
+    /* ---------- Cards ---------- */
+    .card {
+      background: white;
+      padding: 3rem;
+      border-radius: 26px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+    }
+
+    .card p {
+      color: #555;
+      max-width: 800px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2.5rem; }
+    }
+.instagram-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.instagram-text {
+  color: #555;
+  font-size: 1rem;
+}
+
+.instagram-btn {
+  padding: 1rem 3rem;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <section class="hero fade">
+    <h1>Tameem Khasawneh</h1>
+    <p>Turning a passion for cars into visual stories through photography.</p>
+    <a href="#portfolio" class="btn">View My Work</a>
+  </section>
+
+  <section class="section fade" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="gallery">
+      <img src="img_7231.jpg" />
+      <img src="img_7132.jpg" />
+      <img src="img_5753.jpg" /> 
+      <img src="img_5803.jpg" />
+      <img src="img_5778-2.jpg" />
+      <img src="img_5770.jpg" />
+      <img src="img_5737-2.jpg" />
+      <img src="img_5705.jpg" /> 
+      <img src="img_5772.jpg" />
+      <img src="img_5696.jpg" />
+      <img src="img_5074.jpg" />
+      <img src="img_5220.jpg" />
+      <img src="img_5271.jpg" />
+      <img src="img_5106.jpg" />
+      <img src="img_5342-Enhanced-NR.jpg" />
+      <img src="img_5277.jpg" />
+      <img src="img_5113.jpg" />
+      <img src="img_4155-Enhanced-NR.jpg" />
+      <img src="img_4219-Enhanced-NR.jpg" />
+      <img src="img_7129.jpg" />
+      <img src="img_7031.jpg" />
+      <img src="img_7067.jpg" /> 
+      <img src="img_5545.jpg" /> 
+      <img src="img_5630.jpg" />
+      <img src="img_5585.jpg" />
+      <img src="img_4713.jpg" />
+      <img src="img_4717.jpg" />
+      <img src="img_4724.jpg" />
+      <img src="img_4734.jpg" />
+      <img src="img_3100.jpg" />
+      <img src="img_3108.jpg" />
+      <img src="img_0293.jpg" />
+      <img src="img_0194.jpg" />
+      <img src="img_0942-Enhanced-NR.jpg" />
+      <img src="img_6469.jpg" />
+      <img src="img_5903.jpg" />
+      <img src="img_2783.jpg" />
+      <img src="img_1721-2.jpg" />
+      <img src="img_0764-2.jpg" />
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">✕</span>
+    <span class="nav left" onclick="prevImage()">‹</span>
+    <img id="lightbox-img">
+    <span class="nav right" onclick="nextImage()">›</span>
+  </div>
+
+  <section class="section fade">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>I’m a mechanical engineering student with a deep passion for cars and their design. 
+Photography started as a way for me to capture the details and emotion behind automotive engineering, 
+and it quickly became a creative outlet. My work blends technical precision with artistic storytelling, 
+focusing on motion, light, and clean composition.</p>
+    </div>
+  </section>
+
+<div class="card instagram-card">
+  <h2>Instagram</h2>
+  <p class="instagram-text">Follow my work</p>
+  <a href="https://instagram.com/capturedbytameem" target="_blank" class="btn instagram-btn">
+    @capturedbytameem
+  </a>
+</div>
+
+  <section class="section fade" style="text-align:center">
+    <h2>Contact Me</h2>
+    <p style="color:#555;margin-bottom:1.5rem;">Send me a message directly</p>
+    <a class="btn" href="mailto:khasawnehtameem2007@gmail.com">Send Message</a>
+  </section>
+
+  <footer>© 2026 Tameem Khasawneh. All rights reserved.</footer>
+
+  <script>
+    const images = [...document.querySelectorAll('.gallery img')];
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    let current = 0;
+
+    images.forEach((img, i) => img.onclick = () => openLightbox(i));
+
+    function openLightbox(i) {
+      current = i;
+      lightboxImg.src = images[i].src;
+      lightbox.classList.add('active');
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+    }
+
+    function nextImage() {
+      current = (current + 1) % images.length;
+      lightboxImg.src = images[current].src;
+    }
+
+    function prevImage() {
+      current = (current - 1 + images.length) % images.length;
+      lightboxImg.src = images[current].src;
+    }
+
+    document.addEventListener('keydown', e => {
+      if (!lightbox.classList.contains('active')) return;
+      if (e.key === 'ArrowRight') nextImage();
+      if (e.key === 'ArrowLeft') prevImage();
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+
+</body>
+</html>
